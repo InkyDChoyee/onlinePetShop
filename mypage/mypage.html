@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mypage.css">
     <script src="https://kit.fontawesome.com/bf7b37fa88.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -177,91 +177,122 @@
             </div>
         </div>
         <div id="mid">
+            <h3>ORDER</h3>
+
+
+
+
+
+
             <div class="mid-top">
-                <div class="main-prod-show">  <!-- 제일 큰 사진으로 주요 제품 등을 보여줌 -->
-                    <div class="main-prod">
-                        <a href=""><img id="main-prod-pic1" class="main-prod-pic" src="/img/main_product/main-pic1.jpg" alt=""></a>
-                    </div>
-                    <div class="main-prod">
-                        <a href=""><img id="main-prod-pic2" class="main-prod-pic" src="/img/main_product/main-pic2.jpg" alt=""></a>
-                    </div>
-                    <div class="main-prod">
-                        <a href=""><img id="main-prod-pic3" class="main-prod-pic" src="/img/main_product/main-pic3.jpg" alt=""></a>
-                    </div>
-                    <div class="main-prod">
-                        <a href=""><img id="main-prod-pic4" class="main-prod-pic" src="/img/main_product/main-pic4.jpg" alt=""></a>
-                    </div>
-                    <div class="main-prod">
-                        <a href=""><img id="main-prod-pic5" class="main-prod-pic" src="/img/main_product/main-pic5.jpg" alt=""></a>
-                    </div>
-                </div>
-                <div class="main-pic-button">  <!-- 버튼 클릭으로 메인 사진 선택 -->
-                    <button class="pic1" onclick="selectPic(0)"></button>
-                    <button class="pic2" onclick="selectPic(1)"></button>
-                    <button class="pic3" onclick="selectPic(2)"></button>
-                    <button class="pic4" onclick="selectPic(3)"></button>
-                    <button class="pic5" onclick="selectPic(4)"></button>
+                <div class="member_info">
+                    <img src="#" alt="">
+                    <p>홍길동님! 저희 쇼핑몰을 이용해 주셔서 감사합니다. </p>
                 </div>
             </div>
-            <div class="mid-mid">  
-                <div class="board">
-                    <div class="notice-board">
-                        <h3 class="title-notice"><a href="">Notice / Event</a></h3>
-                        <ul class="notice-list">
-                            <li><a href="">Notice 1</a></li>
-                            <li><a href="">Notice 2</a></li>
-                            <li><a href="">Event 2</a></li>
-                            <li><a href="">Event 1</a></li>
-                        </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="mid-mid">
+                <div class="basic_info">
+                    <div class="basic_info_span">
+                        <span class="span_title">기본 정보</span>
+                        <span><span class="required">*</span> 필수입력사항</span>
                     </div>
-                    <div class="review-board">
-                        <h3 class="title-review"><a href="">Review Board</a></h3>
-                        <ul class="review-list">
-                            <li><a href="">Review 4</a></li>
-                            <li><a href="">Review 3</a></li>
-                            <li><a href="">Review 2</a></li>
-                            <li><a href="">Review 1</a></li>
-                        </ul>
-                    </div>
-                    <div class="QnA-board">
-                        <h3 class="title-QnA"><a href="">Q/A Board</a></h3>
-                        <ul class="QnA-list">
-                            <li><a href="">Q/A 4</a></li>
-                            <li><a href="">Q/A 3</a></li>
-                            <li><a href="">Q/A 2</a></li>
-                            <li><a href="">Q/A 1</a></li>
-                        </ul>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>아이디 <span class="required">*</span></th>
+                                <td><input type="text" size="10" readonly placeholder="ship12"></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 <span class="required">*</span></th>
+                                <td><input type="password" size="10"></td>
+                            </tr>
+                            <tr>
+                                <th>비밀번호 확인 <span class="required">*</span></th>
+                                <td><input type="password" size="10"></td>
+                            </tr>
+                            <tr>
+                                <th>이름 <span class="required">*</span></th>
+                                <td><input type="text" size="10" readonly placeholder="이순신"></td>
+                            </tr>
+                            <tr>
+                                <th>주소 <span class="required">*</span></th>
+                                <td>
+                                    <div class="order_address">
+                                        <input type="text" size="10" placeholder="1234"><button>우편번호 ></button> <br>
+                                        <input type="text" size="30" placeholder="조선"> 기본주소 <br>
+                                        <input type="text" size="30" placeholder="덕수"> 나머지주소
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>일반 전화</th>
+                                <td>
+                                    <select name="telephone1" id="telephone1">
+                                        <option value="02">02</option>
+                                        <option value="031">031</option>
+                                        <option value="032">032</option>
+                                    </select> -
+                                    <input type="text" size="5" maxlength="4"> -
+                                    <input type="text" size="5" maxlength="4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>휴대전화 <span class="required">*</span></th>
+                                <td>
+                                    <select name="mobilephone1" id="mobilephone1">
+                                        <option value="02">010</option>
+                                        <option value="031">011</option>
+                                        <option value="032">019</option>
+                                    </select> -
+                                    <input type="text" size="5" maxlength=4 placeholder="1234"> -
+                                    <input type="text" size="5" maxlength=4 placeholder="1234">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>SMS 수신여부 <span class="required">*</span></th>
+                                <td>
+                                    <input type="radio" name="receive" value="agree"> 수신함
+                                    <input type="radio" name="receive" value="disagree"> 수신안함 <br>
+                                    <span class="sms_info">쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일 <span class="required">*</span></th>
+                                <td>
+                                    <input type="text" placeholder="ship12@naver.com">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="basic_info_btn">
+                        <div class="info_edit">
+                            <button>회원정보 수정</button>
+                            <button>취소</button>
+                        </div>
+                        <div class="member_quit">
+                            <button>회원탈퇴</button>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="mid-bottom">
-                <div class="prod-board">
-                    <h2>Home Sweet Home</h2>
-                    <div class="sub-prod-show">  <!-- 메인 제품 외의 주요 제품 목록 -->
-                        <a href=""><img class="sub-prod-pic" src="/img/products/house1.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/house2.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/house3.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/house4.jpg" alt=""></a>
-                    </div>
-        
-                    <h2>WaGoo WaGoo</h2>
-                    <div class="sub-prod-show">  <!-- 메인 제품 외의 주요 제품 목록 -->
-                        <a href=""><img class="sub-prod-pic" src="/img/products/food1.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/food2.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/food3.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/food4.jpg" alt=""></a>
-                    </div>
-        
-                    <h2>Let's Play</h2>
-                    <div class="sub-prod-show">  <!-- 메인 제품 외의 주요 제품 목록 -->
-                        <a href=""><img class="sub-prod-pic" src="/img/products/toy1.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/toy2.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/toy3.jpg" alt=""></a>
-                        <a href=""><img class="sub-prod-pic" src="/img/products/toy4.jpg" alt=""></a>
-                    </div>
-                </div>
-            </div>
+
+
+
+
+
         </div>
         <div id="bottom">
             <div class="btm-box">
@@ -311,5 +342,5 @@
         </div>
     </div>
 </body>
-<script src="script.js"></script>
+<script src="/js/script.js"></script>
 </html>
