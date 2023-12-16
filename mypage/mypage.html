@@ -208,83 +208,85 @@
                         <span class="span_title">기본 정보</span>
                         <span><span class="required">*</span> 필수입력사항</span>
                     </div>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>아이디 <span class="required">*</span></th>
-                                <td><input type="text" size="10" readonly placeholder="ship12"></td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호 <span class="required">*</span></th>
-                                <td><input type="password" size="10"></td>
-                            </tr>
-                            <tr>
-                                <th>비밀번호 확인 <span class="required">*</span></th>
-                                <td><input type="password" size="10"></td>
-                            </tr>
-                            <tr>
-                                <th>이름 <span class="required">*</span></th>
-                                <td><input type="text" size="10" readonly placeholder="이순신"></td>
-                            </tr>
-                            <tr>
-                                <th>주소 <span class="required">*</span></th>
-                                <td>
-                                    <div class="order_address">
-                                        <input type="text" size="10" placeholder="1234"><button>우편번호 ></button> <br>
-                                        <input type="text" size="30" placeholder="조선"> 기본주소 <br>
-                                        <input type="text" size="30" placeholder="덕수"> 나머지주소
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>일반 전화</th>
-                                <td>
-                                    <select name="telephone1" id="telephone1">
-                                        <option value="02">02</option>
-                                        <option value="031">031</option>
-                                        <option value="032">032</option>
-                                    </select> -
-                                    <input type="text" size="5" maxlength="4"> -
-                                    <input type="text" size="5" maxlength="4">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>휴대전화 <span class="required">*</span></th>
-                                <td>
-                                    <select name="mobilephone1" id="mobilephone1">
-                                        <option value="02">010</option>
-                                        <option value="031">011</option>
+                    <form action="/updatemember.do">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>아이디 <span class="required">*</span></th>
+                                    <td><input type="text" size="10" readonly placeholder="ship12"></td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 <span class="required">*</span></th>
+                                    <td><input type="password" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>비밀번호 확인 <span class="required">*</span></th>
+                                    <td><input type="password" size="10"></td>
+                                </tr>
+                                <tr>
+                                    <th>이름 <span class="required">*</span></th>
+                                    <td><input type="text" size="10" readonly placeholder="이순신"></td>
+                                </tr>
+                                <tr>
+                                    <th>주소 <span class="required">*</span></th>
+                                    <td>
+                                        <div class="order_address">
+                                            <input type="text" size="10" placeholder="1234"><button>우편번호 ></button> <br>
+                                            <input type="text" size="30" placeholder="조선"> 기본주소 <br>
+                                            <input type="text" size="30" placeholder="덕수"> 나머지주소
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>일반 전화</th>
+                                    <td>
+                                        <select name="telephone1" id="telephone1">
+                                            <option value="02">02</option>
+                                            <option value="031">031</option>
+                                            <option value="032">032</option>
+                                        </select> -
+                                        <input type="text" size="5" maxlength="4"> -
+                                        <input type="text" size="5" maxlength="4">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>휴대전화 <span class="required">*</span></th>
+                                    <td>
+                                        <select name="mobilephone1" id="mobilephone1">
+                                            <option value="02">010</option>
+                                            <option value="031">011</option>
                                         <option value="032">019</option>
-                                    </select> -
-                                    <input type="text" size="5" maxlength=4 placeholder="1234"> -
-                                    <input type="text" size="5" maxlength=4 placeholder="1234">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>SMS 수신여부 <span class="required">*</span></th>
-                                <td>
-                                    <input type="radio" name="receive" value="agree"> 수신함
-                                    <input type="radio" name="receive" value="disagree"> 수신안함 <br>
-                                    <span class="sms_info">쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th>이메일 <span class="required">*</span></th>
-                                <td>
-                                    <input type="text" placeholder="ship12@naver.com">
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="basic_info_btn">
-                        <div class="info_edit">
-                            <button>회원정보 수정</button>
-                            <button>취소</button>
+                                        </select> -
+                                        <input type="text" size="5" maxlength=4 placeholder="1234"> -
+                                        <input type="text" size="5" maxlength=4 placeholder="1234">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>SMS 수신여부 <span class="required">*</span></th>
+                                    <td>
+                                        <input type="radio" name="receive" value="agree"> 수신함
+                                        <input type="radio" name="receive" value="disagree"> 수신안함 <br>
+                                        <span class="sms_info">쇼핑몰에서 제공하는 유익한 이벤트 소식을 SMS로 받으실 수 있습니다</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>이메일 <span class="required">*</span></th>
+                                    <td>
+                                        <input type="text" placeholder="ship12@naver.com">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="basic_info_btn">
+                            <div class="info_edit">
+                                <button type="button" onclick=updatememberChekc()>회원정보 수정</button>
+                                <button type="reset">취소</button>
+                            </div>
+                            <div class="member_quit">
+                                <button>회원탈퇴</button>
+                            </div>
                         </div>
-                        <div class="member_quit">
-                            <button>회원탈퇴</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
