@@ -39,3 +39,21 @@ function copyAddress() {
     document.querySelector(".copyphone2").value = phoneNo2;
 
 }
+
+function calculator (){
+    var num1 = parseFloat(document.getElementById("p_price").innerText);
+    var num2 = parseFloat(document.getElementById("p_count").innerText);
+
+    var num3 = num1 * num2;
+    var num4 = num3 + 3000;
+
+    document.getElementById("result").innerText = num3;
+
+    var finalResultElements = document.querySelectorAll(".final_result");
+
+    finalResultElements.forEach(function(element) {
+    element.innerText = num4;
+    });
+}
+
+calculator();
