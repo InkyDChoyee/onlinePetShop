@@ -41,13 +41,13 @@ function copyAddress() {
 }
 
 function calculator (){
-    var num1 = parseFloat(document.getElementById("p_price").innerText);
-    var num2 = parseFloat(document.getElementById("p_count").innerText);
+    var num1 = parseFloat(document.querySelector(".p_price").innerText);
+    var num2 = parseFloat(document.querySelector("/p_count").innerText);
 
     var num3 = num1 * num2;
     var num4 = num3 + 3000;
 
-    document.getElementById("result").innerText = num3;
+    document.querySelector(".result").innerText = num3;
 
     var finalResultElements = document.querySelectorAll(".final_result");
 

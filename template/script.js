@@ -321,7 +321,7 @@ function mainProdPicChange() {
                 pics[i].style.opacity = 0;
             }
         }
-
+        updateButtonColors(currentIndex);
         currentIndex = (currentIndex + 1) % pics.length;
     }, 3000);
 }
@@ -346,5 +346,18 @@ function selectPic(index) {
     pic3.style.transition = "opacity 0.5s ease-in-out";
     pic4.style.transition = "opacity 0.5s ease-in-out";
     pic5.style.transition = "opacity 0.5s ease-in-out";
+
+    updateButtonColors(index);
 }
 
+function updateButtonColors(selectedIndex) {
+    let buttons = document.querySelectorAll(".main-pic-button button");;
+
+    buttons.forEach((button, i) => {
+        if (i === selectedIndex) {
+            button.style.background = "#000";
+        } else {
+            button.style.background = "#fff";
+        }
+    });
+}
